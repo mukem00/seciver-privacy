@@ -1,2 +1,2 @@
-# spingo-privacy
-Privacy Policy for SpinGo
+# seciver-privacy
+Privacy Policy for Seciver
