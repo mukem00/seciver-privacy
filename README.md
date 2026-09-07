@@ -1,2 +1,2 @@
 # seciver-privacy
-Privacy Policy for Seciver
+Privacy Policy for Seçiver
