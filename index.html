@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>SpinGo Privacy Policy</title>
+  <title>Seçiver Privacy Policy</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      max-width: 850px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 40px 24px;
       line-height: 1.7;
       color: #1f2937;
       background: #ffffff;
@@ -19,258 +23,369 @@
 
     h1 {
       color: #14213d;
+      font-size: 38px;
       margin-bottom: 8px;
     }
 
     h2 {
       color: #14213d;
-      margin-top: 32px;
+      margin-top: 38px;
+      margin-bottom: 12px;
     }
 
-    .date {
+    p,
+    li {
+      font-size: 17px;
+    }
+
+    .updated {
       color: #6b7280;
-      margin-bottom: 32px;
-    }
-
-    .language-nav {
       margin-bottom: 40px;
-      padding: 14px 18px;
+    }
+
+    .language-switcher {
       background: #f3f4f6;
-      border-radius: 12px;
+      padding: 16px 20px;
+      border-radius: 14px;
+      margin-bottom: 45px;
     }
 
-    .language-nav a {
-      margin-right: 20px;
-      text-decoration: none;
-      color: #1d4ed8;
+    .language-switcher button {
+      border: none;
+      background: transparent;
+      color: #2563eb;
+      font-size: 17px;
       font-weight: 600;
+      cursor: pointer;
+      margin-right: 22px;
+      padding: 4px 0;
     }
 
-    .divider {
-      margin: 60px 0;
-      border: 0;
-      border-top: 1px solid #e5e7eb;
+    .language-switcher button:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 28px;
+    }
+
+    a {
+      color: #2563eb;
     }
 
     footer {
-      margin-top: 50px;
-      padding-top: 20px;
+      margin-top: 55px;
+      padding-top: 24px;
       border-top: 1px solid #e5e7eb;
       color: #6b7280;
-      text-align: center;
+      font-size: 14px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 24px 18px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p,
+      li {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<div class="language-nav">
-  <a href="#english">English</a>
-  <a href="#turkish">Türkçe</a>
-</div>
+  <div class="language-switcher">
+    <button onclick="showEnglish()">English</button>
+    <button onclick="showTurkish()">Türkçe</button>
+  </div>
+
+  <!-- ENGLISH -->
+  <main id="english">
+
+    <h1>Seçiver Privacy Policy</h1>
+    <p class="updated">Last Updated: September 7, 2026</p>
+
+    <p>
+      Seçiver respects your privacy. This Privacy Policy explains how the
+      Seçiver mobile application handles user information.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+
+    <p>
+      Seçiver does not collect personal user information.
+    </p>
+
+    <p>The application does not:</p>
+
+    <ul>
+      <li>Require or create user accounts.</li>
+      <li>Request names, email addresses, or phone numbers.</li>
+      <li>Collect precise or approximate location information.</li>
+      <li>Use advertising identifiers.</li>
+      <li>Track users for advertising purposes.</li>
+      <li>Use analytics services to track user behavior.</li>
+      <li>Send personal user information to developer-operated servers.</li>
+    </ul>
+
+    <h2>2. Data Stored on Your Device</h2>
+
+    <p>
+      Decisions, choices, participant names entered by the user, and decision
+      history created within Seçiver may be stored locally on the user's device.
+    </p>
+
+    <p>
+      This information remains on the user's device and is not transmitted to
+      Seçiver servers or shared with third parties.
+    </p>
+
+    <h2>3. User-Entered Information</h2>
+
+    <p>
+      Seçiver allows users to enter information such as decision options and,
+      optionally, participant names.
+    </p>
+
+    <p>
+      This information is used only to provide the application's decision-making
+      functionality and is processed locally on the device.
+    </p>
+
+    <h2>4. Third-Party Data Sharing</h2>
+
+    <p>
+      Seçiver does not sell, rent, transfer, or share personal user information
+      with third parties.
+    </p>
+
+    <h2>5. Advertising</h2>
+
+    <p>
+      Seçiver does not display third-party advertisements and does not use
+      advertising identifiers for personalized advertising.
+    </p>
+
+    <h2>6. Analytics and Tracking</h2>
+
+    <p>
+      Seçiver does not use third-party analytics or tracking technologies to
+      monitor users across applications or websites.
+    </p>
+
+    <h2>7. Children's Privacy</h2>
+
+    <p>
+      Seçiver does not knowingly collect personal information from children.
+      Because the application does not collect personal user information,
+      no personal information from children is intentionally stored or
+      transmitted by Seçiver.
+    </p>
+
+    <h2>8. Data Security</h2>
+
+    <p>
+      Since Seçiver does not transmit personal user information to
+      developer-operated servers, user-created decision information generally
+      remains locally on the user's device.
+    </p>
+
+    <p>
+      Users are responsible for maintaining the security of their own device.
+    </p>
+
+    <h2>9. Data Deletion</h2>
+
+    <p>
+      Locally stored application data can be removed by clearing the
+      application's data or uninstalling Seçiver from the device.
+    </p>
+
+    <h2>10. Changes to This Privacy Policy</h2>
+
+    <p>
+      This Privacy Policy may be updated if Seçiver's functionality changes or
+      if legal or platform requirements change.
+    </p>
+
+    <p>
+      Any updates will be published on this page with a revised
+      "Last Updated" date.
+    </p>
+
+    <h2>11. Contact</h2>
+
+    <p>
+      If you have questions about this Privacy Policy, you may contact:
+    </p>
+
+    <p>
+      <strong>Developer:</strong> Mustafa Kemal Yılmaz<br>
+      <strong>Application:</strong> Seçiver<br>
+      <strong>Email:</strong>
+      <a href="mailto:mu.ke00@outlook.com">mu.ke00@outlook.com</a>
+    </p>
+
+  </main>
 
 
-<!-- ENGLISH -->
+  <!-- TURKISH -->
+  <main id="turkish" class="hidden">
 
-<section id="english">
+    <h1>Seçiver Gizlilik Politikası</h1>
+    <p class="updated">Son Güncelleme: 7 Eylül 2026</p>
 
-<h1>SpinGo Privacy Policy</h1>
-<p class="date">Last Updated: September 7, 2026</p>
+    <p>
+      Seçiver kullanıcı gizliliğine önem verir. Bu Gizlilik Politikası,
+      Seçiver mobil uygulamasının kullanıcı bilgilerini nasıl ele aldığını
+      açıklamaktadır.
+    </p>
 
-<p>
-SpinGo respects your privacy. This Privacy Policy explains how the
-SpinGo mobile application handles user information.
-</p>
+    <h2>1. Toplanan Veriler</h2>
 
-<h2>1. Information We Collect</h2>
+    <p>
+      Seçiver kişisel kullanıcı verisi toplamaz.
+    </p>
 
-<p>
-SpinGo does not collect personal user information.
-</p>
+    <p>Uygulama:</p>
 
-<p>The application does not:</p>
+    <ul>
+      <li>Kullanıcı hesabı oluşturmaz veya hesap oluşturmayı zorunlu tutmaz.</li>
+      <li>Ad, e-posta adresi veya telefon numarası talep etmez.</li>
+      <li>Kesin veya yaklaşık konum bilgisi toplamaz.</li>
+      <li>Reklam kimliği kullanmaz.</li>
+      <li>Kullanıcıları reklam amacıyla takip etmez.</li>
+      <li>Kullanıcı davranışlarını takip etmek için analiz hizmeti kullanmaz.</li>
+      <li>Kişisel kullanıcı verilerini geliştirici sunucularına göndermez.</li>
+    </ul>
 
-<ul>
-  <li>Require or create user accounts.</li>
-  <li>Request names, email addresses, or phone numbers.</li>
-  <li>Collect precise location information.</li>
-  <li>Use advertising identifiers.</li>
-  <li>Track users for advertising or analytics purposes.</li>
-  <li>Send personal user information to developer-operated servers.</li>
-</ul>
+    <h2>2. Cihazda Saklanan Veriler</h2>
 
-<h2>2. Data Stored on Your Device</h2>
+    <p>
+      Seçiver içerisinde oluşturulan kararlar, seçenekler, kullanıcının girdiği
+      katılımcı isimleri ve karar geçmişi kullanıcının cihazında yerel olarak
+      saklanabilir.
+    </p>
 
-<p>
-Decisions, choices, and decision history created within SpinGo may be
-stored locally on the user's device.
-</p>
+    <p>
+      Bu bilgiler kullanıcının cihazında kalır, Seçiver sunucularına aktarılmaz
+      ve üçüncü taraflarla paylaşılmaz.
+    </p>
 
-<p>
-This locally stored information is not transmitted to SpinGo's
-developer servers and is not shared with third parties.
-</p>
+    <h2>3. Kullanıcı Tarafından Girilen Bilgiler</h2>
 
-<h2>3. Sharing of Information</h2>
+    <p>
+      Seçiver, kullanıcıların karar seçenekleri ve isteğe bağlı olarak katılımcı
+      isimleri gibi bilgiler girmesine olanak sağlar.
+    </p>
 
-<p>
-SpinGo does not sell, rent, or share personal user information with
-third-party companies or organizations.
-</p>
+    <p>
+      Bu bilgiler yalnızca uygulamanın karar verme özelliklerini sağlamak için
+      kullanılır ve cihaz üzerinde yerel olarak işlenir.
+    </p>
 
-<h2>4. Data Retention and Deletion</h2>
+    <h2>4. Üçüncü Taraflarla Veri Paylaşımı</h2>
 
-<p>
-Data created by the user is stored locally on the user's device.
-</p>
+    <p>
+      Seçiver kişisel kullanıcı verilerini üçüncü taraflara satmaz, kiralamaz,
+      aktarmaz veya paylaşmaz.
+    </p>
 
-<p>
-Users can remove locally stored information through available
-application features or by uninstalling the application from their
-device.
-</p>
+    <h2>5. Reklamlar</h2>
 
-<h2>5. Children's Privacy</h2>
+    <p>
+      Seçiver üçüncü taraf reklamları göstermez ve kişiselleştirilmiş reklamlar
+      için reklam kimliği kullanmaz.
+    </p>
 
-<p>
-SpinGo does not knowingly collect personal information from children
-or other users. The application is a general-purpose decision-making
-tool.
-</p>
+    <h2>6. Analiz ve Takip</h2>
 
-<h2>6. Security</h2>
+    <p>
+      Seçiver, kullanıcıları uygulamalar veya internet siteleri arasında takip
+      etmek için üçüncü taraf analiz veya takip teknolojileri kullanmaz.
+    </p>
 
-<p>
-SpinGo does not remotely store users' personal information on
-developer-operated servers.
-</p>
+    <h2>7. Çocukların Gizliliği</h2>
 
-<h2>7. Changes to This Privacy Policy</h2>
+    <p>
+      Seçiver çocuklardan bilerek kişisel bilgi toplamaz. Uygulama kişisel
+      kullanıcı verisi toplamadığından çocuklara ait kişisel bilgiler de
+      Seçiver tarafından bilinçli olarak saklanmaz veya iletilmez.
+    </p>
 
-<p>
-This Privacy Policy may be updated when application functionality,
-legal requirements, or privacy practices change.
-</p>
+    <h2>8. Veri Güvenliği</h2>
 
-<h2>8. Contact</h2>
+    <p>
+      Seçiver kişisel kullanıcı bilgilerini geliştirici tarafından işletilen
+      sunuculara göndermediğinden, kullanıcı tarafından oluşturulan karar
+      bilgileri genel olarak cihaz üzerinde yerel olarak kalır.
+    </p>
 
-<p>
-If you have any questions regarding this Privacy Policy, you may
-contact the developer:
-</p>
+    <p>
+      Kullanıcı kendi cihazının güvenliğini sağlamaktan sorumludur.
+    </p>
 
-<p>
-<strong>Developer:</strong> Mustafa Kemal Yılmaz<br>
-<strong>Application:</strong> SpinGo<br>
-<strong>Email:</strong> mu.ke00@outlook.com
-</p>
+    <h2>9. Verilerin Silinmesi</h2>
 
-</section>
+    <p>
+      Uygulamada yerel olarak saklanan veriler, uygulama verileri temizlenerek
+      veya Seçiver cihazdan kaldırılarak silinebilir.
+    </p>
 
+    <h2>10. Gizlilik Politikasındaki Değişiklikler</h2>
 
-<hr class="divider">
+    <p>
+      Seçiver'in özelliklerinin veya yasal ve platform gerekliliklerinin
+      değişmesi durumunda bu Gizlilik Politikası güncellenebilir.
+    </p>
 
+    <p>
+      Güncellemeler bu sayfada yeni bir "Son Güncelleme" tarihiyle
+      yayınlanacaktır.
+    </p>
 
-<!-- TÜRKÇE -->
+    <h2>11. İletişim</h2>
 
-<section id="turkish">
+    <p>
+      Bu Gizlilik Politikasıyla ilgili sorularınız için:
+    </p>
 
-<h1>SpinGo Gizlilik Politikası</h1>
-<p class="date">Son Güncelleme: 7 Eylül 2026</p>
+    <p>
+      <strong>Geliştirici:</strong> Mustafa Kemal Yılmaz<br>
+      <strong>Uygulama:</strong> Seçiver<br>
+      <strong>E-posta:</strong>
+      <a href="mailto:mu.ke00@outlook.com">mu.ke00@outlook.com</a>
+    </p>
 
-<p>
-SpinGo kullanıcı gizliliğine önem verir. Bu Gizlilik Politikası,
-SpinGo mobil uygulamasının kullanıcı bilgilerini nasıl ele aldığını
-açıklamaktadır.
-</p>
+  </main>
 
-<h2>1. Toplanan Veriler</h2>
+  <footer>
+    © 2026 Seçiver
+  </footer>
 
-<p>
-SpinGo kişisel kullanıcı verisi toplamaz.
-</p>
+  <script>
+    function showEnglish() {
+      document.getElementById("english").classList.remove("hidden");
+      document.getElementById("turkish").classList.add("hidden");
+      document.documentElement.lang = "en";
+    }
 
-<p>Uygulama:</p>
-
-<ul>
-  <li>Kullanıcı hesabı oluşturmaz veya hesap oluşturulmasını gerektirmez.</li>
-  <li>Ad, e-posta adresi veya telefon numarası talep etmez.</li>
-  <li>Kesin konum bilgisi toplamaz.</li>
-  <li>Reklam kimliği kullanmaz.</li>
-  <li>Kullanıcıları reklam veya analiz amacıyla takip etmez.</li>
-  <li>Kişisel kullanıcı verilerini geliştirici sunucularına göndermez.</li>
-</ul>
-
-<h2>2. Cihazda Saklanan Veriler</h2>
-
-<p>
-SpinGo içerisinde oluşturulan kararlar, seçenekler ve karar geçmişi
-kullanıcının cihazında yerel olarak saklanabilir.
-</p>
-
-<p>
-Bu bilgiler SpinGo geliştiricisinin sunucularına aktarılmaz ve üçüncü
-taraflarla paylaşılmaz.
-</p>
-
-<h2>3. Üçüncü Taraflarla Veri Paylaşımı</h2>
-
-<p>
-SpinGo kişisel kullanıcı verilerini üçüncü taraf şirket veya
-kuruluşlarla paylaşmaz, satmaz veya kiralamaz.
-</p>
-
-<h2>4. Veri Saklama ve Silme</h2>
-
-<p>
-Kullanıcı tarafından oluşturulan veriler yalnızca kullanıcının
-cihazında yerel olarak saklanır.
-</p>
-
-<p>
-Kullanıcılar, uygulamadaki ilgili özellikleri kullanarak veya
-uygulamayı cihazlarından kaldırarak yerel verilerini silebilir.
-</p>
-
-<h2>5. Çocukların Gizliliği</h2>
-
-<p>
-SpinGo çocuklardan veya diğer kullanıcılardan bilerek kişisel veri
-toplamaz. Uygulama genel kullanıma yönelik bir karar verme aracıdır.
-</p>
-
-<h2>6. Güvenlik</h2>
-
-<p>
-SpinGo kullanıcıların kişisel bilgilerini geliştirici tarafından
-işletilen harici sunucularda uzaktan depolamaz.
-</p>
-
-<h2>7. Gizlilik Politikasındaki Değişiklikler</h2>
-
-<p>
-Bu Gizlilik Politikası; uygulamanın özellikleri, yasal gereklilikler
-veya gizlilik uygulamaları değiştiğinde güncellenebilir.
-</p>
-
-<h2>8. İletişim</h2>
-
-<p>
-Bu Gizlilik Politikası ile ilgili sorularınız için geliştiriciyle
-iletişime geçebilirsiniz:
-</p>
-
-<p>
-<strong>Geliştirici:</strong> Mustafa Kemal Yılmaz<br>
-<strong>Uygulama:</strong> SpinGo<br>
-<strong>E-posta:</strong> mu.ke00@outlook.com
-</p>
-
-</section>
-
-<footer>
-  © 2026 SpinGo
-</footer>
+    function showTurkish() {
+      document.getElementById("english").classList.add("hidden");
+      document.getElementById("turkish").classList.remove("hidden");
+      document.documentElement.lang = "tr";
+    }
+  </script>
 
 </body>
 </html>
