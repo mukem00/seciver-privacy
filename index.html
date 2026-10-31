@@ -19,6 +19,39 @@
       color: #1f3b73;
     }
 
+    .language-switcher {
+      display: flex;
+      gap: 8px;
+      margin: 18px 0 30px;
+    }
+
+    .language-button {
+      min-height: 40px;
+      border: 1px solid #1f3b73;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #1f3b73;
+      cursor: pointer;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.2;
+      padding: 9px 14px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .language-button:hover,
+    .language-button:focus-visible {
+      background: #eaf0fa;
+      outline: 2px solid #1f3b73;
+      outline-offset: 2px;
+    }
+
+    .language-button.is-active {
+      background: #1f3b73;
+      color: #ffffff;
+    }
+
     hr {
       margin: 40px 0;
       border: none;
@@ -30,183 +63,205 @@
       font-size: 14px;
       color: #666;
     }
+
+    @media (max-width: 480px) {
+      body {
+        margin: 24px auto;
+        padding: 0 16px;
+      }
+
+      .language-switcher {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .language-button {
+        min-width: 0;
+        padding-inline: 8px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-<h1>Seçiver Gizlilik Politikası</h1>
+<h1 data-i18n="title">Seçiver Gizlilik Politikası</h1>
 
-<p><strong>Son güncelleme:</strong> 10 Eylül 2026</p>
+<div class="language-switcher" role="group" aria-label="Dil seçimi" data-i18n-aria-label="languageSelector">
+  <button class="language-button" type="button" data-language="tr" aria-pressed="true">🇹🇷 Türkçe</button>
+  <button class="language-button" type="button" data-language="en" aria-pressed="false">🇬🇧 English</button>
+</div>
 
+<p><strong data-i18n="lastUpdatedLabel">Son güncelleme:</strong> <span data-i18n="lastUpdatedDate">10 Eylül 2026</span></p>
+
+<p data-i18n="intro">Seçiver, kullanıcıların seçenekleri arasından karar vermelerine yardımcı olan bir karar uygulamasıdır. Kullanıcı gizliliğine önem veriyoruz ve uygulama tarafından kullanılan veriler hakkında şeffaf olmayı amaçlıyoruz.</p>
+
+<h2 data-i18n="accountsTitle">1. Hesap ve Kişisel Bilgiler</h2>
+<p data-i18n="accountsText">Seçiver kullanmak için hesap oluşturmanız gerekmez. Uygulama sizden ad, e-posta adresi, telefon numarası veya benzeri kişisel hesap bilgilerini istemez.</p>
+
+<h2 data-i18n="createdDataTitle">2. Uygulama İçerisinde Oluşturulan Veriler</h2>
+<p data-i18n="createdDataText">Kararlar, seçenekler, katılımcı isimleri ve karar geçmişi gibi kullanıcı tarafından oluşturulan bilgiler cihaz üzerinde yerel olarak saklanabilir.</p>
+<p data-i18n="createdDataServerText">Bu bilgiler Seçiver geliştiricisine ait bir sunucuya gönderilmez.</p>
+
+<h2 data-i18n="adsTitle">3. Reklamlar ve Google AdMob</h2>
+<p data-i18n="adsText">Seçiver, uygulama içerisinde reklam göstermek için Google AdMob hizmetini kullanmaktadır.</p>
+<p data-i18n="adsSdkText">Google Mobile Ads SDK; reklam sunumu, analiz, güvenlik ve sahtekârlığın önlenmesi gibi amaçlarla IP adresi, cihaz tanımlayıcıları, uygulama etkileşimleri ve tanılama bilgileri gibi bazı bilgileri otomatik olarak işleyebilir.</p>
+<p data-i18n="adsGoogleText">Bu işlemler Google tarafından gerçekleştirilir ve Google'ın kendi gizlilik politikası ve hizmet şartlarına tabidir.</p>
+
+<h2 data-i18n="thirdPartyTitle">4. Üçüncü Taraf Hizmetleri</h2>
+<p data-i18n="thirdPartyText">Uygulama reklam sunmak amacıyla Google AdMob / Google Mobile Ads SDK kullanmaktadır. Seçiver geliştiricisi, kullanıcı tarafından uygulamaya girilen karar veya seçenekleri reklam amacıyla Google'a doğrudan göndermez.</p>
+
+<h2 data-i18n="retentionTitle">5. Veri Saklama ve Silme</h2>
+<p data-i18n="retentionText">Seçiver tarafından cihazda yerel olarak saklanan karar geçmişi ve benzeri uygulama verileri, uygulama verilerinin temizlenmesi veya uygulamanın cihazdan kaldırılması yoluyla silinebilir.</p>
+
+<h2 data-i18n="childrenTitle">6. Çocukların Gizliliği</h2>
+<p data-i18n="childrenText">Seçiver kullanıcılarından bilerek kişisel bilgi talep etmez. Uygulamanın reklam ve hedef kitle ayarları Google Play ve Google AdMob politikalarına uygun şekilde yapılandırılmaktadır.</p>
+
+<h2 data-i18n="changesTitle">7. Gizlilik Politikasındaki Değişiklikler</h2>
+<p data-i18n="changesText">Bu gizlilik politikası, uygulamanın özelliklerinde veya kullanılan üçüncü taraf hizmetlerinde değişiklik yapılması durumunda güncellenebilir. Güncel sürüm her zaman bu sayfada yayınlanacaktır.</p>
+
+<h2 data-i18n="contactTitle">8. İletişim</h2>
+<p data-i18n="contactIntro">Gizlilik politikası ile ilgili sorularınız için:</p>
 <p>
-Seçiver, kullanıcıların seçenekleri arasından karar vermelerine yardımcı olan
-bir karar uygulamasıdır. Kullanıcı gizliliğine önem veriyoruz ve uygulama
-tarafından kullanılan veriler hakkında şeffaf olmayı amaçlıyoruz.
-</p>
-
-<h2>1. Hesap ve Kişisel Bilgiler</h2>
-
-<p>
-Seçiver kullanmak için hesap oluşturmanız gerekmez.
-Uygulama sizden ad, e-posta adresi, telefon numarası veya benzeri kişisel
-hesap bilgilerini istemez.
-</p>
-
-<h2>2. Uygulama İçerisinde Oluşturulan Veriler</h2>
-
-<p>
-Kararlar, seçenekler, katılımcı isimleri ve karar geçmişi gibi kullanıcı
-tarafından oluşturulan bilgiler cihaz üzerinde yerel olarak saklanabilir.
-</p>
-
-<p>
-Bu bilgiler Seçiver geliştiricisine ait bir sunucuya gönderilmez.
-</p>
-
-<h2>3. Reklamlar ve Google AdMob</h2>
-
-<p>
-Seçiver, uygulama içerisinde reklam göstermek için Google AdMob hizmetini
-kullanmaktadır.
-</p>
-
-<p>
-Google Mobile Ads SDK; reklam sunumu, analiz, güvenlik ve sahtekârlığın
-önlenmesi gibi amaçlarla IP adresi, cihaz tanımlayıcıları, uygulama
-etkileşimleri ve tanılama bilgileri gibi bazı bilgileri otomatik olarak
-işleyebilir.
-</p>
-
-<p>
-Bu işlemler Google tarafından gerçekleştirilir ve Google'ın kendi gizlilik
-politikası ve hizmet şartlarına tabidir.
-</p>
-
-<h2>4. Üçüncü Taraf Hizmetleri</h2>
-
-<p>
-Uygulama reklam sunmak amacıyla Google AdMob / Google Mobile Ads SDK
-kullanmaktadır. Seçiver geliştiricisi, kullanıcı tarafından uygulamaya
-girilen karar veya seçenekleri reklam amacıyla Google'a doğrudan göndermez.
-</p>
-
-<h2>5. Veri Saklama ve Silme</h2>
-
-<p>
-Seçiver tarafından cihazda yerel olarak saklanan karar geçmişi ve benzeri
-uygulama verileri, uygulama verilerinin temizlenmesi veya uygulamanın
-cihazdan kaldırılması yoluyla silinebilir.
-</p>
-
-<h2>6. Çocukların Gizliliği</h2>
-
-<p>
-Seçiver kullanıcılarından bilerek kişisel bilgi talep etmez. Uygulamanın
-reklam ve hedef kitle ayarları Google Play ve Google AdMob politikalarına
-uygun şekilde yapılandırılmaktadır.
-</p>
-
-<h2>7. Gizlilik Politikasındaki Değişiklikler</h2>
-
-<p>
-Bu gizlilik politikası, uygulamanın özelliklerinde veya kullanılan üçüncü
-taraf hizmetlerinde değişiklik yapılması durumunda güncellenebilir.
-Güncel sürüm her zaman bu sayfada yayınlanacaktır.
-</p>
-
-<h2>8. İletişim</h2>
-
-<p>
-Gizlilik politikası ile ilgili sorularınız için:
-</p>
-
-<p>
-<strong>Geliştirici:</strong> Mustafa Kemal Yılmaz<br>
-<strong>Uygulama:</strong> Seçiver<br>
-<strong>E-posta:</strong> mu.ke00@outlook.com
-</p>
-
-<hr>
-
-<h1>Seçiver Privacy Policy</h1>
-
-<p><strong>Last updated:</strong> September 10, 2026</p>
-
-<p>
-Seçiver is a decision-making application designed to help users choose
-between different options.
-</p>
-
-<h2>1. Accounts and Personal Information</h2>
-
-<p>
-Seçiver does not require users to create an account and does not request
-personal account information such as name, email address or phone number.
-</p>
-
-<h2>2. Locally Stored Information</h2>
-
-<p>
-Decisions, options, participant names and decision history created inside
-the application may be stored locally on the user's device.
-</p>
-
-<p>
-This information is not transmitted to servers operated by the Seçiver
-developer.
-</p>
-
-<h2>3. Advertising and Google AdMob</h2>
-
-<p>
-Seçiver uses Google AdMob to display advertisements within the application.
-</p>
-
-<p>
-Google Mobile Ads SDK may automatically process certain information such as
-IP addresses, device identifiers, app interactions and diagnostic information
-for purposes including advertising, analytics, security and fraud prevention.
-</p>
-
-<p>
-Advertising services and related data processing are provided by Google and
-are subject to Google's own privacy policies and applicable terms.
-</p>
-
-<h2>4. Third-Party Services</h2>
-
-<p>
-Seçiver uses Google AdMob / Google Mobile Ads SDK for advertising.
-User-created decisions and options are not directly transmitted to Google
-for advertising purposes by the Seçiver developer.
-</p>
-
-<h2>5. Data Retention and Deletion</h2>
-
-<p>
-Locally stored application data can be removed by clearing the application's
-data or uninstalling the application from the device.
-</p>
-
-<h2>6. Changes to This Policy</h2>
-
-<p>
-This privacy policy may be updated when the application or its third-party
-services change.
-</p>
-
-<h2>7. Contact</h2>
-
-<p>
-<strong>Developer:</strong> Mustafa Kemal Yılmaz<br>
-<strong>Application:</strong> Seçiver<br>
-<strong>Email:</strong> mu.ke00@outlook.com
+  <strong data-i18n="developerLabel">Geliştirici:</strong> Mustafa Kemal Yılmaz<br>
+  <strong data-i18n="applicationLabel">Uygulama:</strong> Seçiver<br>
+  <strong data-i18n="emailLabel">E-posta:</strong> mu.ke00@outlook.com
 </p>
 
 <footer>
-  © 2026 Seçiver
+  <span data-i18n="copyright">© 2026 Seçiver</span>
 </footer>
+
+<script>
+  (() => {
+    const storageKey = 'seciver-support-language';
+    const translations = {
+      tr: {
+        pageTitle: 'Seçiver - Gizlilik Politikası',
+        languageSelector: 'Dil seçimi',
+        title: 'Seçiver Gizlilik Politikası',
+        lastUpdatedLabel: 'Son güncelleme:',
+        lastUpdatedDate: '10 Eylül 2026',
+        intro: 'Seçiver, kullanıcıların seçenekleri arasından karar vermelerine yardımcı olan bir karar uygulamasıdır. Kullanıcı gizliliğine önem veriyoruz ve uygulama tarafından kullanılan veriler hakkında şeffaf olmayı amaçlıyoruz.',
+        accountsTitle: '1. Hesap ve Kişisel Bilgiler',
+        accountsText: 'Seçiver kullanmak için hesap oluşturmanız gerekmez. Uygulama sizden ad, e-posta adresi, telefon numarası veya benzeri kişisel hesap bilgilerini istemez.',
+        createdDataTitle: '2. Uygulama İçerisinde Oluşturulan Veriler',
+        createdDataText: 'Kararlar, seçenekler, katılımcı isimleri ve karar geçmişi gibi kullanıcı tarafından oluşturulan bilgiler cihaz üzerinde yerel olarak saklanabilir.',
+        createdDataServerText: 'Bu bilgiler Seçiver geliştiricisine ait bir sunucuya gönderilmez.',
+        adsTitle: '3. Reklamlar ve Google AdMob',
+        adsText: 'Seçiver, uygulama içerisinde reklam göstermek için Google AdMob hizmetini kullanmaktadır.',
+        adsSdkText: 'Google Mobile Ads SDK; reklam sunumu, analiz, güvenlik ve sahtekârlığın önlenmesi gibi amaçlarla IP adresi, cihaz tanımlayıcıları, uygulama etkileşimleri ve tanılama bilgileri gibi bazı bilgileri otomatik olarak işleyebilir.',
+        adsGoogleText: "Bu işlemler Google tarafından gerçekleştirilir ve Google'ın kendi gizlilik politikası ve hizmet şartlarına tabidir.",
+        thirdPartyTitle: '4. Üçüncü Taraf Hizmetleri',
+        thirdPartyText: "Uygulama reklam sunmak amacıyla Google AdMob / Google Mobile Ads SDK kullanmaktadır. Seçiver geliştiricisi, kullanıcı tarafından uygulamaya girilen karar veya seçenekleri reklam amacıyla Google'a doğrudan göndermez.",
+        retentionTitle: '5. Veri Saklama ve Silme',
+        retentionText: 'Seçiver tarafından cihazda yerel olarak saklanan karar geçmişi ve benzeri uygulama verileri, uygulama verilerinin temizlenmesi veya uygulamanın cihazdan kaldırılması yoluyla silinebilir.',
+        childrenTitle: '6. Çocukların Gizliliği',
+        childrenText: 'Seçiver kullanıcılarından bilerek kişisel bilgi talep etmez. Uygulamanın reklam ve hedef kitle ayarları Google Play ve Google AdMob politikalarına uygun şekilde yapılandırılmaktadır.',
+        changesTitle: '7. Gizlilik Politikasındaki Değişiklikler',
+        changesText: 'Bu gizlilik politikası, uygulamanın özelliklerinde veya kullanılan üçüncü taraf hizmetlerinde değişiklik yapılması durumunda güncellenebilir. Güncel sürüm her zaman bu sayfada yayınlanacaktır.',
+        contactTitle: '8. İletişim',
+        contactIntro: 'Gizlilik politikası ile ilgili sorularınız için:',
+        developerLabel: 'Geliştirici:',
+        applicationLabel: 'Uygulama:',
+        emailLabel: 'E-posta:',
+        copyright: '© 2026 Seçiver'
+      },
+      en: {
+        pageTitle: 'Seçiver - Privacy Policy',
+        languageSelector: 'Language selector',
+        title: 'Seçiver Privacy Policy',
+        lastUpdatedLabel: 'Last updated:',
+        lastUpdatedDate: 'September 10, 2026',
+        intro: 'Seçiver is a decision-making application that helps users choose between their options. We value user privacy and aim to be transparent about the data used by the application.',
+        accountsTitle: '1. Accounts and Personal Information',
+        accountsText: 'You do not need to create an account to use Seçiver. The application does not ask for your name, email address, phone number, or similar personal account information.',
+        createdDataTitle: '2. Data Created Within the Application',
+        createdDataText: 'User-created information, such as decisions, options, participant names, and decision history, may be stored locally on the device.',
+        createdDataServerText: 'This information is not sent to a server operated by the Seçiver developer.',
+        adsTitle: '3. Advertising and Google AdMob',
+        adsText: 'Seçiver uses Google AdMob to display advertisements within the application.',
+        adsSdkText: 'Google Mobile Ads SDK may automatically process certain information, such as IP addresses, device identifiers, app interactions, and diagnostic information, for purposes including ad delivery, analytics, security, and fraud prevention.',
+        adsGoogleText: "These processes are carried out by Google and are subject to Google's own privacy policy and terms of service.",
+        thirdPartyTitle: '4. Third-Party Services',
+        thirdPartyText: 'The application uses Google AdMob / Google Mobile Ads SDK to serve advertisements. The Seçiver developer does not directly send decisions or options entered by the user in the application to Google for advertising purposes.',
+        retentionTitle: '5. Data Retention and Deletion',
+        retentionText: 'Decision history and similar application data stored locally on the device by Seçiver may be deleted by clearing application data or removing the application from the device.',
+        childrenTitle: "6. Children's Privacy",
+        childrenText: 'Seçiver does not knowingly request personal information from its users. The application’s advertising and audience settings are configured in accordance with Google Play and Google AdMob policies.',
+        changesTitle: '7. Changes to the Privacy Policy',
+        changesText: 'This privacy policy may be updated if changes are made to the application’s features or the third-party services it uses. The current version will always be published on this page.',
+        contactTitle: '8. Contact',
+        contactIntro: 'For questions about the privacy policy:',
+        developerLabel: 'Developer:',
+        applicationLabel: 'Application:',
+        emailLabel: 'Email:',
+        copyright: '© 2026 Seçiver'
+      }
+    };
+
+    const languageButtons = document.querySelectorAll('[data-language]');
+
+    const getInitialLanguage = () => {
+      let savedLanguage = null;
+      try {
+        savedLanguage = localStorage.getItem(storageKey);
+      } catch (_) {
+        // Browser storage can be unavailable in private or restricted contexts.
+      }
+
+      if (savedLanguage === 'tr' || savedLanguage === 'en') {
+        return savedLanguage;
+      }
+
+      return (navigator.language || 'en').toLowerCase().startsWith('tr') ? 'tr' : 'en';
+    };
+
+    const setLanguage = (language, shouldPersist = true) => {
+      const dictionary = translations[language];
+      if (!dictionary) {
+        return;
+      }
+
+      document.documentElement.lang = language;
+      document.title = dictionary.pageTitle;
+
+      document.querySelectorAll('[data-i18n]').forEach((element) => {
+        const translation = dictionary[element.dataset.i18n];
+        if (translation) {
+          element.textContent = translation;
+        }
+      });
+
+      document.querySelectorAll('[data-i18n-aria-label]').forEach((element) => {
+        const translation = dictionary[element.dataset.i18nAriaLabel];
+        if (translation) {
+          element.setAttribute('aria-label', translation);
+        }
+      });
+
+      languageButtons.forEach((button) => {
+        const isActive = button.dataset.language === language;
+        button.classList.toggle('is-active', isActive);
+        button.setAttribute('aria-pressed', String(isActive));
+      });
+
+      if (shouldPersist) {
+        try {
+          localStorage.setItem(storageKey, language);
+        } catch (_) {
+          // Keep the current session usable when browser storage is unavailable.
+        }
+      }
+    };
+
+    languageButtons.forEach((button) => {
+      button.addEventListener('click', () => setLanguage(button.dataset.language));
+    });
+
+    setLanguage(getInitialLanguage(), false);
+  })();
+</script>
 
 </body>
 </html>
